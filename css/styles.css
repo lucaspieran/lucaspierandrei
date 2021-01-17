@@ -345,7 +345,7 @@ textarea {
 }
 
 .image-about {
-  background-image: url(/img/Personalizado\ –\ 2.svg);
+  background-image: url("../img/Personalizado – 2.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }

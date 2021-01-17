@@ -134,10 +134,9 @@ function linkAction() {
     /*Active link*/
     navlink.forEach(n => n.classList.remove('active'));
     this.classList.add('active');
-
-
 }
 navlink.forEach(n => n.addEventListener('click', linkAction));
+
 
 
 

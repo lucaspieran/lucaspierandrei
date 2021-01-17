@@ -67,12 +67,35 @@ span {
 .hero {
   height: 600px;
 }
+.nav-link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
 h1 {
   font-size: 50px;
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   line-height: 80px;
+}
+@media (max-width: 766px) {
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    line-height: 70px;
+  }
+}
+@media (max-width: 766px) {
+  .home-title {
+    margin-top: 0px!important;
+    background-color: red;
+
+  }
 }
 
 .iconimg {
@@ -84,12 +107,19 @@ h1 {
 .imgaen-hero {
   background-image: url(../img/Personalizado\ –\ 1.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 @media (max-width: 767px) {
   .imgaen-hero {
     height: 500px;
     bottom: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .imgaen-hero {
+    background-size: 380px;
+    background-position: center;
+    margin-top: 0px!important;
   }
 }
 .font {
@@ -163,9 +193,9 @@ textarea {
   height: 170px;
   background-color: var(--second-color);
 }
-.footer-title{
+.footer-title {
   font-weight: 900;
-  letter-spacing:5px;
+  letter-spacing: 5px;
 }
 .errorr {
   max-width: 50%;
@@ -198,7 +228,6 @@ textarea {
 }
 .social-icon i {
   padding-right: 30px;
- ;
   font-size: 25px;
   color: black;
 }
@@ -278,9 +307,9 @@ textarea {
   margin: 0 auto !important;
   position: absolute;
   top: 30px;
- }
+}
 
- @media (max-width: 767px) {
+@media (max-width: 767px) {
   .skillimg img {
     position: static;
   }
@@ -318,15 +347,13 @@ textarea {
 .image-about {
   background-image: url(/img/Personalizado\ –\ 2.svg);
   background-repeat: no-repeat;
-  background-size: center;
+  background-position: center center;
 }
 @media (max-width: 767px) {
   .image-about {
-    height: 300px;
-    bottom: 0px;
-    margin: 0 auto;
-    right: -30px;
-    margin-top: 10px !important;
+    height: 310px;
+    background-position: center;
+    margin-top: 20px !important;
   }
 }
 
@@ -336,17 +363,27 @@ textarea {
   }
 }
 
-.card{
+.card {
   border: none;
-  
 }
-.card img{
+.card img {
   transition: 1s;
   cursor: pointer;
   border: 200px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
-.card img:hover{
+.card img:hover {
   transform: scale(1.1);
 }
+@media (max-width: 555px) {
+  .card {
+ margin: 0 auto;
+ max-width: 100%;
+  }
+}
+
+.row {
+  margin-right: 0px!important;
+}
+

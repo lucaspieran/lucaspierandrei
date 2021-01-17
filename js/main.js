@@ -139,6 +139,30 @@ navlink.forEach(n => n.addEventListener('click', linkAction));
 
 
 
+$('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .on('click', function (event) {
+
+        if (this.hash !== "") {
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 70
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior), without jumping to hash
+                if (history.pushState) {
+                    history.pushState(null, null, hash);
+                } else {
+                    window.location.hash = hash;
+                }
+            });
+            return false;
+        } // End if
+    });
 
 const sr = ScrollReveal({
     origin: 'top',
@@ -163,26 +187,26 @@ ScrollReveal().reveal('.home_title', {
 ScrollReveal().reveal('.imgaen-hero', {
     delay: 375,
     duration: 1500,
-    origin: 'right',
+    origin: 'bottom',
     distance: '50px'
 });
 ScrollReveal().reveal('.about', {
     delay: 375,
     duration: 1500,
-    origin: 'right',
+    origin: 'bottom',
     distance: '50px'
 });
 ScrollReveal().reveal('.text-center', {
     delay: 375,
     duration: 1500,
-    origin: 'right',
+    origin: 'bottom',
     distance: '50px'
 });
 ScrollReveal().reveal('.card', {
     delay: 375,
     duration: 1500,
     origin: 'bottom',
-    distance: '100px'
+    distance: '30px'
 });
 
 ScrollReveal().reveal('.contact', {
@@ -201,7 +225,7 @@ ScrollReveal().reveal('#contact', {
 ScrollReveal().reveal('.section-title', {
     delay: 600,
     duration: 1200,
-    origin: 'right',
+    origin: 'bottom',
     distance: '50px'
 });
 
@@ -218,7 +242,23 @@ ScrollReveal().reveal('.skills__container', {
 ScrollReveal().reveal('.skillimg', {
     delay: 600,
     duration: 1200,
-    origin: 'right',
+    origin: 'bottom',
+    distance: '50px'
+});
+
+
+
+ScrollReveal().reveal('.image-about', {
+    delay: 600,
+    duration: 1200,
+    origin: 'left',
+    distance: '50px'
+});
+
+ScrollReveal().reveal('.text-about', {
+    delay: 600,
+    duration: 1200,
+    origin: 'bottom',
     distance: '50px'
 });
 

@@ -86,8 +86,9 @@ function enviarEmail(e) {
 }
 
 //reset
-function resetForm(e) {
+function resetForm() {
     formulario.reset();
+
 
     name.classList.remove('is-valid')
     mail.classList.remove('is-valid')
@@ -262,3 +263,9 @@ ScrollReveal().reveal('.text-about', {
     distance: '50px'
 });
 
+ScrollReveal().reveal('.footer-text', {
+    delay: 600,
+    duration: 1200,
+    origin: 'bottom',
+    distance: '30px'
+});

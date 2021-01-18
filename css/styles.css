@@ -383,6 +383,9 @@ textarea {
   }
 }
 
+.footer-text{
+  text-align: center;
+}
 .row {
   margin-right: 0px!important;
 }

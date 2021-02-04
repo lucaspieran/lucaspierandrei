@@ -14,6 +14,8 @@ const navlink = document.querySelectorAll('.nav-link')
 
 
 //eventlisteners
+
+
 document.addEventListener('DOMContentLoaded', iniciarApp);
 name.addEventListener('blur', validarFormulario);
 mail.addEventListener('blur', validarFormulario);
@@ -87,6 +89,7 @@ function enviarEmail(e) {
 
 //reset
 function resetForm() {
+
     formulario.reset();
 
 
@@ -95,6 +98,8 @@ function resetForm() {
     textarea.classList.remove('is-valid')
 
     iniciarApp();
+
+    return
 }
 
 
@@ -151,7 +156,7 @@ $('a[href*="#"]')
             var hash = this.hash;
 
             $('html, body').animate({
-                scrollTop: $(hash).offset().top - 70
+                scrollTop: $(hash).offset().top - 60
             }, 800, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior), without jumping to hash
@@ -163,7 +168,12 @@ $('a[href*="#"]')
             });
             return false;
         } // End if
+        if (history.replaceState) {
+            history.replaceState(null, null, hash);
+        }
     });
+
+
 
 const sr = ScrollReveal({
     origin: 'top',

@@ -174,7 +174,6 @@ $('a[href*="#"]')
     });
 
 
-
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
@@ -192,7 +191,7 @@ ScrollReveal().reveal('.navbar', {
 ScrollReveal().reveal('.home_title', {
     delay: 375,
     duration: 1500,
-    origin: 'left',
+    origin: 'bottom',
     distance: '50px'
 });
 ScrollReveal().reveal('.imgaen-hero', {
@@ -244,7 +243,7 @@ ScrollReveal().reveal('.section-title', {
 ScrollReveal().reveal('.skills__container', {
     delay: 600,
     duration: 1200,
-    origin: 'left',
+    origin: 'bottom',
     distance: '50px'
 });
 
@@ -262,7 +261,7 @@ ScrollReveal().reveal('.skillimg', {
 ScrollReveal().reveal('.image-about', {
     delay: 600,
     duration: 1200,
-    origin: 'left',
+    origin: 'bottom',
     distance: '50px'
 });
 

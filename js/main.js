@@ -191,13 +191,13 @@ ScrollReveal().reveal('.navbar', {
 ScrollReveal().reveal('.home_title', {
     delay: 375,
     duration: 1500,
-    origin: 'bottom',
+    origin: 'left',
     distance: '50px'
 });
 ScrollReveal().reveal('.imgaen-hero', {
     delay: 375,
     duration: 1500,
-    origin: 'bottom',
+    origin: 'right',
     distance: '50px'
 });
 ScrollReveal().reveal('.about', {

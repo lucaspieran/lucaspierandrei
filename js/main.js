@@ -274,7 +274,7 @@ ScrollReveal().reveal('.text-about', {
 
 ScrollReveal().reveal('.footer-text', {
     delay: 600,
-    duration: 1200,
+    duration: 700,
     origin: 'bottom',
     distance: '30px'
 });

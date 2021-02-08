@@ -92,9 +92,8 @@ h1 {
 }
 @media (max-width: 766px) {
   .home-title {
-    margin-top: 0px!important;
+    margin-top: 0px !important;
     background-color: red;
-
   }
 }
 
@@ -119,7 +118,7 @@ h1 {
   .imgaen-hero {
     background-size: 380px;
     background-position: center;
-    margin-top: 0px!important;
+    margin-top: 0px !important;
   }
 }
 .font {
@@ -374,18 +373,18 @@ textarea {
   overflow: hidden;
 }
 .card img:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 @media (max-width: 555px) {
   .card {
- margin: 0 auto;
- max-width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 
-.footer-text{
+.footer-text {
   text-align: center;
 }
 .row {
-  margin-right: 0px!important;
+  margin-right: 0px !important;
 }

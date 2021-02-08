@@ -198,7 +198,7 @@ ScrollReveal().reveal('.imgaen-hero', {
     delay: 375,
     duration: 1500,
     origin: 'right',
-    distance: '50px'
+    distance: '10px'
 });
 ScrollReveal().reveal('.about', {
     delay: 375,

@@ -41,6 +41,9 @@ html {
   --z-fixed: 100;
 }
 
+p{
+  font-family: var(--body-font)
+}
 html {
   scroll-behavior: smooth;
 }
@@ -273,10 +276,10 @@ textarea {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 95%;
+  width: 90%;
 }
 .skills__css {
-  width: 85%;
+  width: 75%;
 }
 .skills__js {
   width: 70%;
@@ -342,7 +345,9 @@ textarea {
   margin-right: 10px;
   color: #0e2431;
 }
-
+.social-2{
+  margin-top: 10px;
+}
 .image-about {
   background-image: url("../img/Personalizado – 2.svg");
   background-repeat: no-repeat;
@@ -381,7 +386,14 @@ textarea {
     max-width: 100%;
   }
 }
-
+.text-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+p{letter-spacing: 1px;}
 .footer-text {
   text-align: center;
 }

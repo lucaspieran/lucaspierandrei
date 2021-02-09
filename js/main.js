@@ -157,7 +157,7 @@ $('a[href*="#"]')
 
             $('html, body').animate({
                 scrollTop: $(hash).offset().top - 60
-            }, 800, function () {
+            }, 600, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior), without jumping to hash
                 if (history.pushState) {
@@ -197,8 +197,8 @@ ScrollReveal().reveal('.home_title', {
 ScrollReveal().reveal('.imgaen-hero', {
     delay: 375,
     duration: 1500,
-    origin: 'right',
-    distance: '10px'
+    origin: 'bottom',
+    distance: '50px'
 });
 ScrollReveal().reveal('.about', {
     delay: 375,

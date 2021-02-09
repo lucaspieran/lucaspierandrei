@@ -41,8 +41,8 @@ html {
   --z-fixed: 100;
 }
 
-p{
-  font-family: var(--body-font)
+p {
+  font-family: "Poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -345,7 +345,7 @@ textarea {
   margin-right: 10px;
   color: #0e2431;
 }
-.social-2{
+.social-2 {
   margin-top: 10px;
 }
 .image-about {
@@ -386,14 +386,15 @@ textarea {
     max-width: 100%;
   }
 }
-.text-about{
+.text-about {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
-p{letter-spacing: 1px;}
+p {
+  letter-spacing: 1px;
+}
 .footer-text {
   text-align: center;
 }
